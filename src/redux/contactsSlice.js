@@ -1,4 +1,5 @@
 import { createSlice, nanoid } from '@reduxjs/toolkit';
+import { toast } from 'react-hot-toast';
 
 const initialContacts = [
   { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
@@ -13,7 +14,22 @@ export const contactsSlise = createSlice({
   reducers: {
     addContact: {
       reducer(state, action) {
+        if (state.find(({ name }) => name === action.payload.name)) {
+          toast.error(`Name ${action.payload.name} is alredy in contacts!`, {
+            position: 'top-right',
+          });
+          return;
+        }
 
+        if (state.find(({ number }) => number === action.payload.number)) {
+          toast.error(
+            `Number ${action.payload.number} is alredy in contacts!`,
+            {
+              position: 'top-right',
+            }
+          );
+          return;
+        }
         return [...state, action.payload];
       },
       prepare(obj) {
