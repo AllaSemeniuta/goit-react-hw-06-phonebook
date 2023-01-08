@@ -1,10 +1,12 @@
 export const theme = {
   colors: {
-    primary: '#757575',
-    secondary: '#2f303a',
-    light: '#C0C0C0',
-    ligthGrey: '#A0A0A0',
-    lightBlue: '#CCFFCC',
+    primary: '#07A8DB',
+    secondary: '#9667FF',
+    white: '#ffff',
+    pink: '#F943FD',
+    lightBlue: '#96E6FF',
+    purple: '#38005A',
+    lightBlueRGBA: (150, 230, 255, 0.6),
   },
   space: [
     '0px',
@@ -18,14 +20,15 @@ export const theme = {
     '128px',
     '256px',
   ],
-  fonts: {
-    body: 'system-ui, sans-serif',
-    heading: 'system-ui, sans-serif',
-    monospace: 'Menlo, monospace',
-  },
+  // fonts: {
+  //   body: 'system-ui, sans-serif',
+  //   heading: 'system-ui, sans-serif',
+  //   monospace: 'Menlo, monospace',
+  // },
   fontSizes: {
     xs: '14px',
     s: '16px',
+    sm: '20px',
     m: '24px',
     l: '32px',
     xl: '48px',
