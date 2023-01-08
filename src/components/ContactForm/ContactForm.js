@@ -44,13 +44,13 @@ export const ContactForm = () => {
   };
 
   return (
-    <Box mb="40px">
+    <Box mb="60px">
       <Form onSubmit={handleSubmit}>
         <Box
           display="flex"
           flexDirection="column"
-          justifyContent="center"
-          alignItems="center"
+          justifyContent="flex-start"
+          alignItems="flex-start"
           mb={3}
         >
           <Label htmlFor="name">Name</Label>
@@ -69,7 +69,7 @@ export const ContactForm = () => {
           display="flex"
           flexDirection="column"
           justifyContent="center"
-          alignItems="center"
+          alignItems="flex-start"
           mb={3}
         >
           <Label htmlFor="number">Number </Label>

@@ -11,7 +11,7 @@ export const Input = styled.input`
 `;
 
 export const Label = styled.label`
-  margin-bottom: ${p => p.theme.space[3]};
+  margin-bottom: 16px;
   font-size: ${p => p.theme.fontSizes.s};
   width: inherit;
 `;

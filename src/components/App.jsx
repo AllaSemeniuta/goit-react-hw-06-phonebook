@@ -12,9 +12,9 @@ export const App = () => {
       <GlobalStyle />
       <Box px={4} height="100vh">
         {/* <Title as="h1">Phonebook</Title> */}
-        <Box position="relative" top="70px">
+        <Box position="relative" top="80px">
           <ContactForm />
-          <Title mb="16px">Contacts</Title>
+          <Title mb="30px">Contacts</Title>
           <Filter />
           <ContactList />
           <Toaster />
